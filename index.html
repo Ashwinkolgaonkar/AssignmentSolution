@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
+     <style>
         body {
-        background-color: #f1f1f1;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0; 
+            background-color: #f1f1f1;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0; 
         }
-        <!-- NAVIGATION BAR-->
+        /* NAVIGATION BAR */
         ul {
-        background-color: white;
-        box-shadow: 0 15px 15px #7c7a7a;
-        height: 100%;
-        list-style-type: none;
-        margin: 0;
-        overflow: auto;
-        padding: 0;
-        position: fixed;
-        text-align :center;
-        width: 10%; 
+            background-color: white;
+            box-shadow: 0 15px 15px #7c7a7a;
+            height: 100%;
+            list-style-type: none;
+            margin: 0;
+            overflow: auto;
+            padding: 0;
+            position: fixed;
+            text-align :center;
+            width: 10%; 
         }
-        <!--STYLING OF NAVBAR LABELS-->
+        /*STYLING OF NAVBAR LABELS*/
         li a {
-        display: block;
-        color: #555454;
-        padding: 20px 16px;
-        font-size: 13px;
-        font-weight: 600;
-        text-decoration: none;
+            display: block;
+            color: #555454;
+            padding: 20px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
         }
         li i{
             font-size:25px;
         }
         .icon{
-        margin-top: 20px;  
+            margin-top: 20px;  
         }
         li a.active {
-        background-color:#a7e5f8;
-        color: black;
+            background-color:#a7e5f8;
+            color: black;
         }
         li a:hover :not(.active){
-        background-color:#a7e5f8;
-        color: black;
+            background-color:#a7e5f8;
+            color: black;
         }
-        <!--CONTENT SECTION-->
+        /*CONTENT SECTION*/
         .mainSec1{ 
             background-color: #f1f1f1; 
             margin: 0px 10%;
@@ -65,7 +65,7 @@
             margin:50px 10%;
             padding:50px;   
         }
-        </style>
+      </style>
         <script src="https://kit.fontawesome.com/beb7e4dbbd.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -75,11 +75,10 @@
         <li><a  href="#student"><i class="far fa-user"></i><br>Student</a></li>
         <li><a class="active" href="#lesson"><i class="fas fa-book"></i><br>Lesson Plan</a></li>
         <li><a href="#setting"><i class="fas fa-cog"></i><br>Setting</a></li>
-        <li></li>
     </ul>
 
     <div style="padding-top:100px;    background-color: white; "></div>
-    <div  class="mainSec1">
+    <div  id="lesson" class="mainSec1">
         <h4 style="color: grey; padding-left: 15px;">  <p>  <i class="fas fa-caret-left"></i> Videos</p></h4>
         <input class="urlbox" type="text" placeholder="Insert URL here"><br>
         <input class="uploadbox"type="button" id="myFile" name="filename" value="upload" >
